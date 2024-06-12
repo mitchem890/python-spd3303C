@@ -18,6 +18,7 @@ class SPD3303X(object):
         "SPD3303X-E",
         "SPD3XIDD5R7170",
         "NPD3XHBC4R0026",
+        "SPD3303C"
     ]
 
     MANUFACTURERS = {
@@ -97,12 +98,12 @@ class USBDevice(SPD3303X):
         self._visa_rscr = visa_rscr
 
     def __enter__(self):
-        rm = pyvisa.ResourceManager("@py")
+        rm = pyvisa.ResourceManager()
         if self._visa_rscr is None:
             logger.debug("Trying to auto-detect USB device")
             resources = rm.list_resources()
             for res_str in resources:
-                if "SPD3XID" in res_str:
+                if "SPD3" in res_str:
                     self._visa_rscr = res_str
             if self._visa_rscr is None:
                 raise Exception("No device found")
