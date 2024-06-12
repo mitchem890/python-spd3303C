@@ -9,7 +9,7 @@ black = "*"
 pytest = "*"
 
 [packages]
-spd3303x = {editable = true,path = "."}
+spd3303c = {editable = true,path = "."}
 matplotlib = "*"
 numpy = "*"
 pyvisa-py = "*"

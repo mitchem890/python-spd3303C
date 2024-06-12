@@ -1,3 +1,23 @@
+Metadata-Version: 2.1
+Name: spd3303c
+Version: 1.0.0
+Summary: Python API for SigLent SPD3303X/E/C power supplies.
+Author: Kai Geissdoerfer
+Author-email: kai.geissdoerfer@tu-dresden.de
+License: MIT
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Information Technology
+Classifier: Programming Language :: Python :: 3
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: numpy
+Requires-Dist: pyvisa-py
+Requires-Dist: click
+Requires-Dist: python-vxi11
+Requires-Dist: zeroconf
+Requires-Dist: psutil
+
 [![PyPiVersion](https://img.shields.io/pypi/v/spd3303x.svg)](https://pypi.org/project/spd3303x)
 [![Pytest](https://github.com/geissdoerfer/python-spd3303x/actions/workflows/python-tests.yml/badge.svg)](https://github.com/geissdoerfer/python-spd3303x/actions/workflows/python-tests.yml)
 [![CodeStyle](https://img.shields.io/badge/code%20style-black-000000.svg)](https://github.com/psf/black)

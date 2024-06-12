@@ -10,12 +10,12 @@ README = (HERE / "README.md").read_text()
 requirements = ["numpy", "pyvisa-py", "click", "python-vxi11", "zeroconf", "psutil"]
 
 setup(
-    name="spd3303x",
-    version="1.0.2",
-    description="Python API for SigLent SPD3303X",
+    name="spd3303c",
+    version="1.0.0",
+    description="Python API for SigLent SPD3303X/E/C power supplies.",
     long_description=README,
     long_description_content_type="text/markdown",
-    packages=["spd3303x"],
+    packages=["spd3303c"],
     license="MIT",
     classifiers=[
         # How mature is this project? Common values are
